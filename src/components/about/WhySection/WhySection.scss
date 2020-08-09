@@ -1,0 +1,35 @@
+@import "../../../style/main.scss";
+
+.graySection{
+  .profile-content{
+    margin: 1em 0;
+    .mobile-view{
+      display: none;
+      margin-bottom: 20px;
+      @media all and (max-width: 480px) {
+        display: block;
+      }
+    }
+    .mobile-hidden{
+      display: block;
+      @media all and (max-width: 480px) {
+        display: none;
+      }
+    }
+    .profile-text{
+      color: $darkGray;
+      font-family: $Tajawal;
+      font-weight: 300;
+      font-size: 1.5em;
+      text-align: justify;
+      line-height: 1.5;
+      @media all and (max-width: 768px) {
+        font-size: 1em;
+      }
+    }
+    img{
+      width: 100%;
+    }
+  }
+
+}

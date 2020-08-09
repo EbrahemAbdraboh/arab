@@ -1,0 +1,33 @@
+$mainBlue: #5a9ded;
+
+.scroll {
+    opacity: 0.4;
+    background-color: $mainBlue;
+    width: 65px;
+    height: 65px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    border-radius: 50%;
+    border: none;
+    display: none;
+    z-index: 999;
+
+    &:hover {
+      opacity: 1;
+    }
+    &:focus{
+      outline: none;
+    }
+    .arrow-up {
+      color: white;
+      transform: rotate(180deg);
+      font-size: 2rem;
+      line-height: 1;
+      }
+  }
+  .isScrolling{
+      .scroll{
+          display: block;
+      }
+  }

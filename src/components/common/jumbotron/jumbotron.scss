@@ -1,0 +1,112 @@
+
+@import "../../../style/main.scss";
+
+$homeSlide : './images/homeSlide.png';
+$pageSlide : './images/aboutSlide.png';
+$contactSlide : './images/contactSlide.png';
+$newsSlide : './images/newsSlide.png';
+$inquirySlide : './images/inquirySlide.png';
+
+
+.jumbo-wrapper {
+  position: relative;
+  overflow: hidden;
+  #tsparticles{
+    position: absolute;
+    top:0;
+    left:0;
+    height: 100vh;
+    width: 100%;
+
+  }
+  .jumbotron{
+    margin-bottom: 0;
+    position: relative;
+  }
+  .home-slide {
+    background: url($homeSlide) no-repeat center center;
+    background-size: cover;
+    color: #fff;
+    height: 100vh;
+    position: relative;
+    z-index: -2;
+    .massegeContainer{
+      width: 100%;
+      position: relative;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      p.showClass{
+        position: absolute;
+        top: 30%;
+        margin: 0 auto;
+        text-align: center;
+        text-shadow: 2px 5px 9px $darkGray;
+        padding: 30px;
+        width: 60%;
+        font-size: 3em;
+        font-family: $Tajawal;
+        color: #fff;
+        font-weight: 900;
+
+      }
+      p.hideClass{
+        display: none;
+      }
+    }
+  }
+  .page-slide {
+    background: url($pageSlide) no-repeat center;
+    background-size: cover;
+    color: #fff;
+    height: 30vh;
+    position: relative;
+    z-index: -2;
+  }
+  .contact-slide {
+    background: url($contactSlide) no-repeat top;
+    background-size: cover;
+    color: #fff;
+    height: 100vh;
+    position: relative;
+    z-index: -2;
+  }
+  .news-slide {
+    background: url($newsSlide) no-repeat top;
+    background-size: cover;
+    color: #fff;
+    height: 30vh;
+    position: relative;
+    z-index: -2;
+  }
+  .inquiry-slide {
+    background: url($inquirySlide) no-repeat top;
+    background-size: cover;
+    color: #fff;
+    height: 30vh;
+    position: relative;
+    z-index: -2;
+  }
+  .massegeContainer{
+    width: 100%;
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    p.showClass{
+      position: absolute;
+      top: 50%;
+      margin: 0 auto;
+      text-align: center;
+      font-size: 2em;
+      font-family: $Tajawal;
+      color: $darkGray;
+      font-weight: 900;
+
+    }
+    p.hideClass{
+      display: none;
+    }
+  }
+
+}

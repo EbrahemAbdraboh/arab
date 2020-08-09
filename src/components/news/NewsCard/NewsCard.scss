@@ -1,0 +1,113 @@
+@import "../../../style/main.scss";
+
+.courses-wrapper{
+  .course-item{
+    margin-bottom: 25px;
+    .card{
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 3px 5px -2px $darkGray;
+      cursor: pointer;
+      .image-wrapper{
+        overflow: hidden;
+        height: 100%;
+
+
+        .card-img-top{
+          border-top-right-radius:  10px;
+          border-bottom-right-radius: 10px;
+          height: 100%;
+          object-fit: cover;
+          -webkit-transition: all 1s ease-in-out;
+          -moz-transition: all 1s ease-in-out;
+          -o-transition: all 1s ease-in-out;
+          transition: all 1s ease-in-out;
+        }
+
+      }
+      &:hover{
+        box-shadow: 0 8px 7px 1px $lightGray;
+        .image-wrapper{
+            background: black;
+          .card-img-top{
+            opacity: 0.5;
+            -webkit-transform: scale(1.5);
+            -moz-transform: scale(1.5);
+            -o-transform: scale(1.5);
+            transform: scale(1.5);
+          }
+        }
+        .card-body{
+
+          .h5{
+            color: $red;
+          }
+          small{
+            color: $red !important;
+          }
+        }
+      }
+      .card-body{
+        text-align: justify;
+        span{
+          font-family: $Tajawal;
+          color: #a5a0a0;
+          font-size: 12px;
+          margin: 0;
+          padding: 0;
+        }
+        .h5{
+          color: $darkGray;
+          font-family: $Tajawal;
+          font-size: 1.2em;
+          font-weight: 900;
+          -webkit-transition: all 0.2s ease-in-out;
+          -moz-transition: all 0.2s ease-in-out;
+          -o-transition: all 0.2s ease-in-out;
+          transition: all 0.2s ease-in-out;
+          @media all and (max-width: 768px) {
+            font-size: 14px;
+          }
+          @media all and (max-width: 320px) {
+            font-size: 12px;
+          }
+        }
+        .card-title{
+          overflow: hidden;
+          max-height: 40px;
+          min-height: 40px;
+          @media all and (max-width: 768px) {
+            overflow: hidden;
+            max-height: 36px;
+            min-height: 36px;
+          }
+        }
+        .card-text{
+          min-height: 40px;
+          max-height: 40px;
+          overflow: hidden;
+        }
+        .card-footer{
+          background-color: #fff;
+          padding: 1em 0 0;
+          border-top: 1px solid $lightGray;
+          display: flex;
+          flex-direction: row-reverse;
+          justify-content: space-between;
+          small{
+            display: flex;
+            font-weight: 500;
+            font-size: 1em;
+            -webkit-transition: all 0.2s ease-in-out;
+            -moz-transition: all 0.2s ease-in-out;
+            -o-transition: all 0.2s ease-in-out;
+            transition: all 0.2s ease-in-out;
+            &:last-child{
+              display:none;
+            }
+          }
+        }
+      }
+    }
+  }
+}

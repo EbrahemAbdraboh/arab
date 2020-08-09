@@ -1,0 +1,70 @@
+@import '../../../../../style/main.scss';
+
+.course-header{
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  font-family: $Tajawal;
+  text-align: $textAlign;
+  .sub-title{
+    text-align: justify;
+  }
+  .ui.breadcrumb{
+    background-color: #fff !important;
+    margin: 0 0 15px !important;
+    padding: 0;
+    &:first-child{
+      color: $darkGray;
+    }
+    a{
+      color: $lightGray;
+      font-weight: bold;
+    }
+  }
+  .date-start{
+    display: flex;
+    flex-direction: row;
+    font-size: 1em;
+    font-weight: 600;
+    span.title{
+      color: $darkGray;
+    }
+    span.text{
+      color: $lightGray;
+      margin: 0 20px;
+    }
+
+  }
+  .header-numbers{
+    display: flex;
+    margin: 10px 0 25px;
+    flex-direction: row;
+    justify-content: space-between;
+    .ui.label{
+      background-color: $darkGray;
+      color: #fff;
+      .icon{
+        margin-left: 10px;
+      }
+    }
+    .rate-wrapper{
+      display: flex !important;
+      justify-content: flex-end !important;
+      span.text{
+        margin: 0 10px;
+      }
+      .star-ratings{
+        display: flex !important;
+        justify-content: flex-end !important;
+        flex-direction: row-reverse !important;
+        .star-container{
+          display: flex;
+
+        }
+
+      }
+
+    }
+
+  }
+}

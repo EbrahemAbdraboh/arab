@@ -1,0 +1,17 @@
+// Fonts
+
+$Tajawal: 'Tajawal', sans-serif;
+
+
+// RTL Files
+
+$siteLanguage: Arabic;
+
+$float: right;
+$textAlign: right;
+
+@if $siteLanguage == English {
+  $float: left;
+  $textAlign: left;
+
+}

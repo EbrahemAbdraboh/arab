@@ -1,0 +1,50 @@
+@import "../../style/main.scss";
+
+.contact-page{
+  .contact-info{
+    .web-mail-info{
+      i{
+        font-size: 1em;
+      }
+    }
+    h4{
+      color:$darkGray !important;
+    }
+    .input{
+      width: 100%;
+
+      margin: 20px 0;
+
+      border-radius: 5px;
+      input{
+        text-align: $textAlign;
+        font-size: 1em;
+        font-family: $Tajawal;
+        background-color: #fff;
+        border: 1px solid $lightGray;
+        &:focus{
+          border: 1px solid $red;
+
+        }
+      }
+
+    }
+    textarea{
+      text-align: $textAlign;
+      font-size: 1em;
+      font-family: $Tajawal;
+      background-color: #fff;
+      border: 1px solid $lightGray;
+      margin-bottom: 20px;
+      &:focus{
+        border: 1px solid $red;
+
+      }
+    }
+    .adress-container{
+      @media all and (max-width: 767px) {
+        margin-top: 25px;
+      }
+    }
+  }
+}

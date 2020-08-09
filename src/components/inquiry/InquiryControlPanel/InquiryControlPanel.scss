@@ -1,0 +1,33 @@
+@import "../../../style/main.scss";
+
+.control-panel-wrapper{
+  background-color: #e0e0e0;
+  border-radius: 10px;
+  margin: 0 0 30px;
+  padding: 0 20px !important;
+  display: flex;
+  height: auto;
+  position: sticky !important;
+  top: 66px !important;
+  z-index: 90;
+  width: 100%;
+  @media all and (min-width: 480px) and (max-width: 768px) {
+    top: 60px;
+  }
+  @media all and (max-width: 480px) {
+    top: 38px;
+  }
+  .search-content{
+    width: 100%;
+    margin: 0;
+    .search-box{
+      padding: 20px 0;
+      height: auto;
+      width: 100%;
+      i.icon{
+      
+      }
+    }
+  }
+
+}

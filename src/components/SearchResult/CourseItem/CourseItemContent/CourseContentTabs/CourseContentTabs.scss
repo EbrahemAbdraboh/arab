@@ -1,0 +1,125 @@
+@import '../../../../../style/main.scss';
+
+.course-tabs-wrapper{
+  width: 100%;
+  margin: 25px 0;
+  min-height: 400px;
+  .ui.secondary.menu{
+    font-family: $Tajawal;
+    font-size: 1.5em;
+    color: $lightGray;
+    @media all and (max-width: 768px) {
+      font-size: 1em !important;
+    }
+    .active.item{
+      color: $red;
+      border-color: $red;
+      -webkit-transition: all 0.2s ease-in-out;
+      -moz-transition: all 0.2s ease-in-out;
+      -o-transition: all 0.2s ease-in-out;
+      transition: all 0.2s ease-in-out;
+    }
+
+  }
+  .training-table-statistic{
+    width: 100%;
+    margin: 0;
+    .ui.statistics{
+      display: flex;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      justify-content: space-between;
+      &:after{
+        content: none;
+      }
+      .ui.statistic{
+        margin: 0 0 20px;
+        text-align: center;
+
+        .label{
+          color: $darkGray !important;
+          font-family: $Tajawal !important;
+          font-size: 1.5em !important;
+        }
+        .value{
+          color: $lightGray !important;
+          font-weight: 600 !important;
+          font-size: 2em !important;
+          font-family: $Tajawal !important;
+          @media all and (min-width: 768px) and (max-width: 1024px) {
+            font-size: 0.8em !important;
+            font-weight: 500;
+          }
+        }
+      }
+    }
+  }
+  .content-table-wrapper{
+    width: 100%;
+
+    .ui.styled.accordion .active.title{
+      font-family: $Tajawal;
+      color: $darkGray;
+      font-weight: 700 !important;
+    }
+    .ui.styled.accordion .title{
+      font-family: $Tajawal;
+      color: $lightGray;
+      font-weight: 700 !important;
+      &:hover{
+        color: $darkGray;
+      }
+    }
+    .content-table-container{
+      position: relative;
+      width: 100%;
+      height: 100%;
+      .lockData{
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255,255,255, 0.5);
+        position: absolute;
+        top:0;
+        left:0;
+        z-index: 9;
+        -webkit-transition: all 0.2s ease-in-out;
+        -moz-transition: all 0.2s ease-in-out;
+        -o-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+      }
+      .openData{
+        height: 0;
+        -webkit-transition: all 0.2s ease-in-out;
+        -moz-transition: all 0.2s ease-in-out;
+        -o-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+
+
+      }
+      .table{
+        border: none;
+        margin-bottom: 0;
+        tr{
+          cursor:pointer;
+          td{
+            border: none !important;
+            span{
+              padding: 0 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.player-wrapper {
+  position: relative;
+  padding-top: 56.25%; /* Player ratio: 100 / (1280 / 720) */
+  .react-player {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}

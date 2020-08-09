@@ -1,0 +1,70 @@
+@import "../../../style/main.scss";
+
+.button-wrapper{
+  position: relative;
+  a.btn-primary{
+    border:1px solid $darkGray !important;
+    padding: 0.6em 1em !important;
+    background-color: transparent ;
+    font-family: $Tajawal !important;
+    font-size: 1.2em !important;
+    min-width: 200px;
+    color: $darkGray !important;
+    margin: auto !important;
+    font-weight: bold !important;
+    box-shadow: 0 1px 4px gray;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    &:hover{
+      border: 1px solid $red !important;
+      box-shadow: 0 8px 9px $lightGray;
+      color: $red !important;
+    }
+    &:focus{
+      outline: none;
+      background-color: transparent !important;
+    }
+    &:active{
+      outline: none;
+      background-color: transparent !important;
+    }
+  }
+}
+.button-side{
+  text-align: $textAlign;
+  margin: 30px 37px 0;
+}
+.button-wrapper-white{
+  position: relative;
+  a.btn-primary{
+    border:1px solid #fff !important;
+    padding: 0.6em 1em !important;
+    background-color: transparent ;
+    font-family: $Tajawal !important;
+    font-size: 1.2em !important;
+    min-width: 200px;
+    color: #fff !important;
+    margin: auto !important;
+    font-weight: bold !important;
+    box-shadow: 0 1px 4px gray;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    &:hover{
+      border: 1px solid $darkGray !important;
+      box-shadow: 0 8px 9px $lightGray !important;
+      color: $darkGray !important;
+    }
+    &:focus{
+      outline: none;
+      background-color: transparent !important;
+    }
+    &:active{
+      outline: none;
+      background-color: transparent !important;
+    }
+  }
+}

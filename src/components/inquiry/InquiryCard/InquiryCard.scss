@@ -1,0 +1,52 @@
+@import "../../../style/main.scss";
+
+
+.accordion{
+  width: 100%;
+  border: none !important;
+  box-shadow: none !important;
+  .inquiry-item{
+    overflow: hidden;
+    margin-bottom: 20px;
+    border: 1px solid $lightGray;
+    border-radius: 5px;
+    text-align: $textAlign;
+    background-color: #fafafa;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    .active.title{
+      font-family: $Tajawal !important;
+      font-size: 1.2em !important;
+      color: $darkGray !important;
+      -webkit-transition: all 0.2s ease-in-out;
+      -moz-transition: all 0.2s ease-in-out;
+      -o-transition: all 0.2s ease-in-out;
+      transition: all 0.2s ease-in-out;
+    }
+    .title{
+      font-family: $Tajawal !important;
+      font-size: 1.2em !important;
+      color: $lightGray !important;
+      -webkit-transition: all 0.2s ease-in-out;
+      -moz-transition: all 0.2s ease-in-out;
+      -o-transition: all 0.2s ease-in-out;
+      transition: all 0.2s ease-in-out;
+      text-align: justify;
+      border: none !important;
+
+
+    }
+    &:hover{
+      .title{
+        color: $red !important;
+      }
+    }
+    .content{
+      background-color: #fff !important;
+      font-size: 1em;
+
+    }
+  }
+}

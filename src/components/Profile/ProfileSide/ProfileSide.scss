@@ -1,0 +1,112 @@
+@import '../../../style/main.scss';
+
+.profile-side-wrapper{
+  position: sticky;
+  top: 170px;
+  margin-bottom: 25px;
+  .profile-info-wrapper{
+    background-color: #fff;
+    border-radius: 10px;
+    position: relative;
+    text-align: center;
+    margin-top:75px;
+    padding: 140px 20px 20px;
+    width: 100%;
+    box-shadow: 0 3px 5px 1px $lightGray;
+    .side-img-wrapper{
+      position: absolute;
+      top: -75px;
+      left:0;
+      right: 0;
+      img{
+        border-radius: 50%;
+      }
+      p{
+        margin: 15px auto;
+        font-size: 1.5em;
+        font-weight: 600;
+      }
+
+
+    }
+    .side-user-action{
+      margin: 25px auto;
+      padding: 0;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      .ui.animated.button .hidden.content, .ui.animated.button .visible.content{
+        margin-right: 0;
+      }
+      .mainButton{
+        border:1px solid $red !important;
+        padding: 0.8em 1em !important;
+        background-color: $red !important;
+        font-family: $Tajawal !important;
+        font-size: 1.2em !important;
+        height: 2.5em !important;
+        line-height: 0.8em !important;
+        margin: 0 5px !important;
+        width: 100% !important;
+        color: #fff !important;
+        font-weight: bold !important;
+        box-shadow: 0 1px 4px gray !important;
+        -webkit-transition: all 0.2s ease-in-out;
+        -moz-transition: all 0.2s ease-in-out;
+        -o-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+        &:hover{
+          border: 1px solid $darkRed !important;
+          box-shadow: none !important;
+          background-color: $darkRed !important;
+          box-shadow: 0 8px 9px $lightGray !important;
+        }
+      }
+
+
+    }
+    .side-info-statistic{
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      .ui.statistic>.value, .ui.statistics .statistic>.value{
+        color: $darkGray !important;
+        font-family: $Tajawal !important;
+        font-size: 2em !important;
+      }
+      .ui.statistic>.label, .ui.statistics .statistic>.label{
+        color: $lightGray !important;
+        font-weight: 900 !important;
+        font-size: 1em !important;
+        font-family: $Tajawal !important;
+        @media all and (max-width: 1024px) {
+          font-size: 0.8em !important;
+          font-weight: 500;
+        }
+      }
+    }
+
+  }
+
+}
+
+.modals {
+  .ui.modal>.header {
+    font-family: $Tajawal !important;
+    color: $darkGray !important;
+    text-align: $textAlign !important;
+  }
+  .content{
+    .form{
+      text-align: $textAlign;
+      font-family: $Tajawal;
+      input{
+        text-align: $textAlign;
+        font-family: $Tajawal;
+        &:focus{
+          border: 1px solid $red;
+        }
+      }
+    }
+  }
+}

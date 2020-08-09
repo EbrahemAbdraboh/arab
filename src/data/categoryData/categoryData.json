@@ -1,0 +1,47 @@
+[
+  {
+    "id": "1",
+    "image": "https://i.postimg.cc/RFGQmSgG/Course01.png",
+    "name": "تصميمات"
+  },
+  {
+    "id": "2",
+    "image": "https://i.postimg.cc/DzrPCds9/Course02.png",
+    "name": "إدارة أعمال"
+  },
+  {
+    "id": "3",
+    "image": "https://i.postimg.cc/CKT4H6ZC/Course03.png",
+    "name": "تطوير برامج"
+  },
+  {
+    "id": "4",
+    "image": "https://i.postimg.cc/RCsQb06Z/Course04.png",
+    "name": "تصوير"
+  },
+  {
+    "id": "5",
+    "image": "https://i.postimg.cc/W3s6xFwh/Course05.png",
+    "name": "تصميمات"
+  },
+  {
+    "id": "6",
+    "image": "https://i.postimg.cc/PrCzGkYz/Course06.png",
+    "name": "إدارة أعمال"
+  },
+  {
+    "id": "7",
+    "image": "https://i.postimg.cc/gjJykC5p/Course07.png",
+    "name": "تطوير برامج"
+  },
+  {
+    "id": "8",
+    "image": "https://i.postimg.cc/XqzfZ2SC/Course08.png",
+    "name": "تصميمات"
+  },
+  {
+    "id": "9",
+    "image": "https://i.postimg.cc/RCsQb06Z/Course04.png",
+    "name": "تصوير"
+  }
+]

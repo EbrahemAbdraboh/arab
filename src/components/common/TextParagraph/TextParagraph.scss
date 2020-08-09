@@ -1,0 +1,21 @@
+@import "../../../style/main.scss";
+
+
+
+.text-paragraph-wrapper{
+
+    p{
+      color: $darkGray;
+      font-family: $Tajawal;
+      font-weight: 300;
+      font-size: 1.5em;
+      text-align: justify;
+      line-height: 1.5;
+      margin: 10px 0 20px;
+      width: 100%;
+      @media all and (max-width: 768px) {
+        font-size: 1em;
+      }
+    }
+
+}

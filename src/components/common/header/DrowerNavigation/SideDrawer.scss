@@ -1,0 +1,73 @@
+@import "../../../../style/main.scss";
+
+.side-drawer {
+  height: 100%;
+  background-color: #fff;
+  box-shadow: 1px 0px 7px rgba(0, 0, 0, 0.5);
+  position: fixed;
+  font-family: $Tajawal;
+  font-weight: bold;
+  top: 0;
+  left: 0;
+  width: 70%;
+  max-width: 400px;
+  z-index: 200;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-out;
+  .drawer-header{
+    width: 100%;
+    display: block;
+    border-bottom: 2px solid $lightGray;
+    img{
+      display: block;
+      width:75%;
+      margin: 2em auto;
+    }
+    .toolbar__actions{
+      display: flex;
+      justify-content: space-around;
+      margin: 10px;
+      width: 100%;
+      font-size: 1em;
+
+    }
+  }
+  ul{
+    list-style: none;
+    margin: 0 1.5em;
+    padding: 0;
+    li{
+      display: block;
+      padding: 0.7em;
+      border-bottom: 2px solid $lightGray;
+      a{
+        color: $darkGray;
+        display: block;
+        text-align: $textAlign;
+        -webkit-transition: all 0.2s ease-in-out;
+        -moz-transition: all 0.2s ease-in-out;
+        -o-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+        &:hover{
+          color:$red;
+          text-decoration: none;
+        }
+        &:focus{
+          color:$red;
+          text-decoration: none;
+        }
+        &:active{
+          color:$red;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+  @media all and (min-width: 769px) {
+    display: none;
+  }
+}
+
+.side-drawer.open {
+  transform: translateX(0);
+}

@@ -1,0 +1,203 @@
+@import "../../../style/main.scss";
+
+
+.footer{
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  .footer-head{
+    padding: 20px 0;
+    background: $lightGray;
+    .logo{
+      cursor: pointer;
+      img{
+        width: 100%;
+        display: block;
+        margin:0;
+        padding:0;
+      }
+    }
+    .footer-sitemap{
+      height: 100%;
+      ul{
+        list-style: none;
+        display: flex;
+        justify-content: flex-end;
+        height: 100%;
+        margin: 0;
+        padding: 30px 0;
+        flex-wrap: wrap;
+        @media all and (min-width: 768px) and (max-width: 1024px) {
+          padding: 20px 0;
+        }
+        @media all and (min-width: 480px) and (max-width: 768px) {
+          padding: 15px 0;
+         }
+         @media all and (max-width: 480px) {
+           margin: 10px 0;
+           justify-content: center;
+           padding: 0;
+         }
+        li{
+          display: flex;
+          padding: 0 10px;
+          align-items: center;
+          height: auto;
+          border-left: 2px solid $darkGray;
+
+          &:last-of-type{
+            border-left: none;
+          }
+          a{
+            font-weight: 500;
+            color: $darkGray;
+            text-decoration: none;
+            font-weight: bold;
+            cursor: pointer;
+            -webkit-transition: all 0.3s ease-in-out;
+            -moz-transition: all 0.3s ease-in-out;
+            -o-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+            &:hover, &:focus, &:active{
+              color: $red;
+              text-decoration: none;
+
+            }
+            @media all and (min-width: 481px) and (max-width: 768px) {
+              font-size: 0.8em;
+              font-weight: 500;
+             }
+          }
+          @media all and (max-width: 480px) {
+            margin: 10px 0;
+
+          }
+        }
+      }
+    }
+  }
+
+  /*///////////////////////////////////////////////////////////
+  // Footer Copyright
+  ///////////////////////////////////////////////////////////*/
+
+  .footer-copyright{
+    padding: 10px 0;
+    background: $darkGray;
+
+    .social{
+      display: flex;
+      justify-content: flex-start;
+      margin: 0;
+      @media all and (max-width: 767px) {
+        justify-content: center;
+        margin: 10px 0;
+      }
+
+      .facebook{
+        background-image: url(./facebook.png);
+        width: 40px;
+        height: 40px;
+        display: flex;
+        margin-left: 20px;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        a{
+          display: block;
+          cursor: pointer;
+          width: 40px;
+          height: 40px;
+        }
+        &:hover{
+          background-image: url(./facebook-hover.png);
+        }
+      }
+      .tweeter{
+        background-image: url(./tweeter.png);
+        width: 40px;
+        height: 40px;
+        display: flex;
+        margin-left: 20px;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        a{
+          display: block;
+          cursor: pointer;
+          width: 40px;
+          height: 40px;
+        }
+        &:hover{
+          background-image: url(./tweeter-hover.png);
+        }
+      }
+      .linkedin{
+        background-image: url(./linkedin.png);
+        width: 40px;
+        height: 40px;
+        display: flex;
+        margin-left: 20px;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        a{
+          display: block;
+          cursor: pointer;
+          width: 40px;
+          height: 40px;
+        }
+        &:hover{
+          background-image: url(./linkedin-hover.png);
+
+        }
+      }
+      .youtube{
+        background-image: url(./youtube.png);
+        width: 40px;
+        height: 40px;
+        display: flex;
+        margin:0;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        a{
+          display: block;
+          cursor: pointer;
+          width: 40px;
+          height: 40px;
+        }
+        &:hover{
+          background-image: url(./youtube-hover.png);
+
+        }
+      }
+    }
+    .copyright{
+      width: 100%;
+      display: flex;
+      height: 100%;
+      justify-content: flex-end;
+      background: $darkGray;
+      margin:0;
+      padding: 0;
+      @media all and (max-width: 767px) {
+        justify-content: center;
+      }
+      p{
+        align-self: center;
+        font-size: 1em;
+        font-family: $Tajawal;
+        color: $lightGray;
+      }
+    }
+  }
+
+}

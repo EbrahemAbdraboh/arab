@@ -1,0 +1,35 @@
+@import "../../../style/main.scss";
+
+.search-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  @media all and (max-width: 768px) {
+    margin: 0 0 20px;
+   }
+  .search-box{
+    -webkit-appearance: none;
+    border: none;
+    outline: none;
+    padding: 0 20px;
+    width: 100%;
+    border-radius: 8px;
+    line-height: 30px;
+    margin: 0;
+    display: flex;
+    height: 40px;
+    i.icon{
+    }
+    input{
+      text-align: $textAlign;
+      font-family: $Tajawal;
+      font-weight: 500;
+
+      &:focus{
+        border: 1px solid $red;
+      }
+    }
+
+  }
+}

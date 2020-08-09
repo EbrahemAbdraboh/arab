@@ -1,0 +1,18 @@
+@import "../../../style/main.scss";
+
+
+.address-wrapper{
+  margin-bottom: 25px;
+  
+  h4.header{
+    margin: 10px 0 0 !important;
+    font-family: $Tajawal !important;
+    font-weight: 300;
+    color: $lightGray !important;
+    i{
+      font-size: 1em !important;
+      color: $lightGray;
+
+    }
+  }
+}

@@ -1,0 +1,89 @@
+@import "../../../style/main.scss";
+
+.mainButton{
+  border:1px solid $red !important;
+  padding: 0.8em 1em !important;
+  background-color: $red !important;
+  font-family: $Tajawal !important;
+  font-size: 1.2em !important;
+  height: 2.5em !important;
+  line-height: 0.8em !important;
+  margin: 0 5px !important;
+  color: #fff !important;
+  font-weight: bold !important;
+  box-shadow: 0 1px 4px gray !important;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  .falseIcon{
+    display: none;
+  }
+  .trueIcon{
+    display: inline-block;
+    padding-left: 20px;
+    color: #fff !important;
+    opacity: 1 !important;
+  }
+  &:hover{
+    border: 1px solid $darkRed !important;
+    box-shadow: none !important;
+    background-color: $darkRed !important;
+    box-shadow: 0 8px 9px $lightGray !important;
+    .trueIcon{
+      display: inline-block;
+      padding-left: 20px;
+    }
+  }
+}
+.secondButton{
+  border:1px solid $darkGray !important;
+  padding: 0.8em 1em !important;
+  background-color: transparent !important;
+  font-family: $Tajawal !important;
+  font-size: 1.2em !important;
+  height: 2.5em !important;
+  line-height: 0.8em !important;
+  color: $darkGray !important;
+  margin: 0 5px !important;
+  font-weight: bold !important;
+  box-shadow: 0 1px 4px gray !important;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  @media all and  (max-width: 768px) {
+    height: 2em !important;
+    font-size: 1em !important;
+    line-height: 0.3em !important;
+  }
+
+  .falseIcon{
+    display: none;
+  }
+  .trueIcon{
+    display: inline-block;
+    padding-left: 20px;
+    color: $darkGray !important;
+    opacity: 1 !important;
+  }
+  &:hover{
+    border: 1px solid $red !important;
+    box-shadow: 0 8px 9px $lightGray !important;
+    color: $red !important;
+    .trueIcon{
+      display: inline-block;
+      padding-left: 20px;
+      color: $red !important;
+    }
+  }
+}
+.submitButton{
+  padding: 0.5em 1em !important;
+  width: 150px;
+  float: $float;
+}
+.cyrcleButton{
+  border-radius: 50% !important;
+
+}

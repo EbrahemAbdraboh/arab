@@ -1,0 +1,29 @@
+@import "../../../style/main.scss";
+
+.search-wrapper{
+  margin-top: 70vh;
+  position: absolute !important;
+
+  width: 100%;
+  z-index: 9;
+
+  .input{
+    width: 100%;
+    input{
+      font-family: $Tajawal;
+      text-align: $textAlign;
+      padding-right: 4em !important;
+      border-color: $darkGray !important;
+      background-color: #fff;
+      color: $darkGray !important;
+      &::placeholder {
+        color: $darkGray;
+        font-size: 1.5em;
+      }
+      &:focus{
+        border-color: $red !important;
+      }
+    }
+  }
+
+}

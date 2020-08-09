@@ -1,0 +1,169 @@
+@import '../../../style/main.scss';
+
+.login-register-wrapper{
+  margin: 30px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  .login-register-tab-list{
+    display: flex;
+    justify-content: center;
+    margin: 25px auto;
+
+    .nav-item {
+      position: relative;
+      a {
+        background: none;
+        padding: 0;
+
+        h4 {
+          color: $lightGray;
+          font-size: 25px;
+          font-family: $Tajawal;
+          font-size: 1.8em;
+          font-weight: 600;
+          margin: 0 20px;
+          text-transform: capitalize;
+          transition: all 0.3s ease 0s;
+          @media all and (min-width: 480px) and (max-width: 768px) {
+            font-size: 1.5em;
+          }
+          @media all and (max-width: 480px) {
+            font-size: 1.2em;
+          }
+        }
+        &:last-child::after {
+          display: none;
+        }
+      }
+      a.active h4 {
+        color: $red;
+
+      }
+
+      &:after {
+        background-color: #454545;
+        bottom: 5px;
+        content: "";
+        height: 18px;
+        margin: 0 auto;
+        position: absolute;
+        left: -2px;
+        transition: all 0.4s ease 0s;
+        width: 1px;
+      }
+
+      &:last-child {
+        &::after {
+          display: none;
+        }
+      }
+    }
+  }
+  .login-form-container {
+    background: transparent none repeat scroll 0 0;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+    padding: 50px;
+    text-align: $textAlign;
+    @media all and (min-width: 768px) and (max-width: 1024px) {
+      padding: 30px;
+    }
+    @media all and (max-width: 768px) {
+      padding: 10px;
+    }
+
+    .login-register-form {
+      form {
+        width: 100%;
+        margin: 0 auto;
+        label{
+          color: $darkGray;
+          display: block;
+          width: 100%;
+          font-size: 1em;
+          margin-bottom: 5px;
+          height: 22px;
+        }
+        input {
+          background-color: transparent;
+          border: 1px solid $lightGray;
+          border-radius: 5px;
+          color: $darkGray;
+          display: block;
+          width: 100%;
+          margin-bottom: 20px;
+          padding: 10px;
+          font-size: 14px;
+          height: 45px;
+          margin-bottom: 30px;
+          &:focus{
+            border: 1px solid $darkGray;
+          }
+        }
+
+        .button-box {
+          .login-toggle-btn {
+            padding: 10px 0 19px;
+            label {
+              color: $darkGray;
+              font-size: 15px;
+              font-weight: 400;
+
+            }
+          }
+          button {
+            background-color: $red;
+            border: medium none;
+            color: #fff;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 600;
+            font-family: $Tajawal;
+
+            line-height: 1;
+            padding: 11px 30px;
+            text-transform: uppercase;
+            transition: all 0.3s ease 0s;
+            &:hover {
+              color: #fff;
+            }
+            &:disabled{
+              background-color: $lightGray !important;
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+input.error {
+  border-color: red;
+}
+
+.input-feedback {
+  color: $red;
+  margin-top: -15px;
+  font-size: 1em;
+  margin-bottom: 15px;
+  @media all and (max-width: 768px) {
+    font-size: 0.8em;
+  }
+}
+
+button {
+  padding: 10px 15px;
+  background-color: rgb(70, 153, 179);
+  color: white;
+  border: 1px solid rgb(70, 153, 179);
+  transition: ease-in-out background-color 250ms, ease-in-out color 250ms;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: white;
+  color: rgb(70, 153, 179);
+}
