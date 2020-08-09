@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/arab/static/css/main.0f769393.chunk.css",
+    "main.js": "/arab/static/js/main.75973b02.chunk.js",
+    "main.js.map": "/arab/static/js/main.75973b02.chunk.js.map",
+    "runtime-main.js": "/arab/static/js/runtime-main.6dca5c8f.js",
+    "runtime-main.js.map": "/arab/static/js/runtime-main.6dca5c8f.js.map",
+    "static/css/2.382c35bb.chunk.css": "/arab/static/css/2.382c35bb.chunk.css",
+    "static/js/2.5a413219.chunk.js": "/arab/static/js/2.5a413219.chunk.js",
+    "static/js/2.5a413219.chunk.js.map": "/arab/static/js/2.5a413219.chunk.js.map",
+    "index.html": "/arab/index.html",
+    "precache-manifest.73fecc79b43ef0fd304473b732b099f2.js": "/arab/precache-manifest.73fecc79b43ef0fd304473b732b099f2.js",
+    "service-worker.js": "/arab/service-worker.js",
+    "static/css/2.382c35bb.chunk.css.map": "/arab/static/css/2.382c35bb.chunk.css.map",
+    "static/css/main.0f769393.chunk.css.map": "/arab/static/css/main.0f769393.chunk.css.map",
+    "static/js/2.5a413219.chunk.js.LICENSE.txt": "/arab/static/js/2.5a413219.chunk.js.LICENSE.txt",
+    "static/media/SectionWithBg.scss": "/arab/static/media/training-section.791bd80d.png",
+    "static/media/jumbotron.scss": "/arab/static/media/newsSlide.44935da0.png",
+    "static/media/profile.png": "/arab/static/media/profile.38209df7.png",
+    "static/media/trainerImage.png": "/arab/static/media/trainerImage.eca913dd.png",
+    "static/media/why.png": "/arab/static/media/why.7ac7ad12.png",
+    "static/media/whySection.png": "/arab/static/media/whySection.9c3b95f6.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6dca5c8f.js",
+    "static/css/2.382c35bb.chunk.css",
+    "static/js/2.5a413219.chunk.js",
+    "static/css/main.0f769393.chunk.css",
+    "static/js/main.75973b02.chunk.js"
+  ]
+}
